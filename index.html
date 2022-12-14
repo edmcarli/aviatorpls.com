@@ -1,0 +1,1741 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Dosis:wght@200;300;400;500;600;700;800&amp;family=Oswald:wght@200;300;400;500;600;700&amp;family=Signika:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/com.css">
+
+  <title>Aviator Plus</title>
+  
+  <link rel="preload" href="https://scripts.converteai.net/d237feb8-9708-4290-845a-9df0dc3921b7/players/635c3a0b9d08b6000a1d62a5/player.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+<link rel="preload" href="https://images.converteai.net/d237feb8-9708-4290-845a-9df0dc3921b7/players/635c3a0b9d08b6000a1d62a5/thumbnail.jpg" as="image">
+<link rel="preload" href="https://cdn.converteai.net/d237feb8-9708-4290-845a-9df0dc3921b7/635c39ff40e2a9000cfed87c/playlist.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+<script type="text/javascript">
+    (function(E,v,e,R,m,a,r,t) { E[v] = { supportsFiber: true, inject: function() {}, onCommitFiberRoot: function() {}}; E[e] = {emit: function() {},on: function() {},off: function() {},once: function() {}}; E[R] = E[R] || {}; if (!E[R][a]) E[R][a] = []; E[m] = function(x, y, z) { E[R][a].push([ x, y, z ]); }; t = r.getElementsByTagName('head')[0]; var s = r.createElement('script'); s.async = 1; s.src = '//pixel.evermart.com.br/js/client-latest.js'; t.appendChild(s); })(window, '__REACT_DEVTOOLS_GLOBAL_HOOK__', '__VUE_DEVTOOLS_GLOBAL_HOOK__', 'evermartPixel', 'epq', 'commandsQueue', document);
+    epq('init', '6325eb49e253a726a946a9e1');
+</script>
+
+  <!-- script block do mouse inicio -->
+  <script type="text/javascript">
+    var message = "Desculpe, o clique com o botão direito foi desativado.";
+ 
+    function clickIE() {
+      if (document.all) {
+        (message);
+        return false;
+      }
+    }
+ 
+    function clickNS(e) {
+      if (document.layers || (document.getElementById && !document.all)) {
+        if (e.which == 2 || e.which == 3) {
+          (message);
+          return false;
+        }
+      }
+    }
+    if (document.layers) {
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown = clickNS;
+    } else {
+      document.onmouseup = clickNS;
+      document.oncontextmenu = clickIE;
+    }
+    document.oncontextmenu = new Function("return false")
+  </script>
+  <!-- script block do mouse final -->
+ 
+  <!-- script block dos atalhos - inicio -->
+  <script type='text/javascript'>
+    //<![CDATA[
+    shortcut = {
+      all_shortcuts: {},
+      add: function (a, b, c) {
+        var d = {
+          type: "keydown",
+          propagate: !1,
+          disable_in_input: !1,
+          target: document,
+          keycode: !1
+        };
+        if (c)
+          for (var e in d) "undefined" == typeof c[e] && (c[e] = d[e]);
+        else c = d;
+        d = c.target, "string" == typeof c.target && (d = document.getElementById(c.target)), a = a.toLowerCase(),
+          e = function (d) {
+            d = d || window.event;
+            if (c.disable_in_input) {
+              var e;
+              d.target ? e = d.target : d.srcElement && (e = d.srcElement), 3 == e.nodeType && (e = e.parentNode);
+              if ("INPUT" == e.tagName || "TEXTAREA" == e.tagName) return
+            }
+            d.keyCode ? code = d.keyCode : d.which && (code = d.which), e = String.fromCharCode(code).toLowerCase(),
+              188 == code && (e = ","), 190 == code && (e = ".");
+            var f = a.split("+"),
+              g = 0,
+              h = {
+                "`": "~",
+                1: "!",
+                2: "@",
+                3: "#",
+                4: "$",
+                5: "%",
+                6: "^",
+                7: "&",
+                8: "*",
+                9: "(",
+                0: ")",
+                "-": "_",
+                "=": "+",
+                ";": ":",
+                "'": '"',
+                ",": "<",
+                ".": ">",
+                "/": "?",
+                "\\": "|"
+              },
+              i = {
+                esc: 27,
+                escape: 27,
+                tab: 9,
+                space: 32,
+                "return": 13,
+                enter: 13,
+                backspace: 8,
+                scrolllock: 145,
+                scroll_lock: 145,
+                scroll: 145,
+                capslock: 20,
+                caps_lock: 20,
+                caps: 20,
+                numlock: 144,
+                num_lock: 144,
+                num: 144,
+                pause: 19,
+                "break": 19,
+                insert: 45,
+                home: 36,
+                "delete": 46,
+                end: 35,
+                pageup: 33,
+                page_up: 33,
+                pu: 33,
+                pagedown: 34,
+                page_down: 34,
+                pd: 34,
+                left: 37,
+                up: 38,
+                right: 39,
+                down: 40,
+                f1: 112,
+                f2: 113,
+                f3: 114,
+                f4: 115,
+                f5: 116,
+                f6: 117,
+                f7: 118,
+                f8: 119,
+                f9: 120,
+                f10: 121,
+                f11: 122,
+                f12: 123
+              },
+              j = !1,
+              l = !1,
+              m = !1,
+              n = !1,
+              o = !1,
+              p = !1,
+              q = !1,
+              r = !1;
+            d.ctrlKey && (n = !0), d.shiftKey && (l = !0), d.altKey && (p = !0), d.metaKey && (r = !0);
+            for (var s = 0; k = f[s], s < f.length; s++) "ctrl" == k || "control" == k ? (g++, m = !0) : "shift" ==
+              k ? (g++, j = !0) : "alt" == k ? (g++, o = !0) : "meta" == k ? (g++, q = !0) : 1 < k.length ? i[k] ==
+              code && g++ : c.keycode ? c.keycode == code && g++ : e == k ? g++ : h[e] && d.shiftKey && (e = h[e],
+                e == k && g++);
+            if (g == f.length && n == m && l == j && p == o && r == q && (b(d), !c.propagate)) return d
+              .cancelBubble = !0, d.returnValue = !1, d.stopPropagation && (d.stopPropagation(), d
+              .preventDefault()), !1
+          }, this.all_shortcuts[a] = {
+            callback: e,
+            target: d,
+            event: c.type
+          }, d.addEventListener ? d.addEventListener(c.type, e, !1) : d.attachEvent ? d.attachEvent("on" + c.type,
+            e) : d["on" + c.type] = e
+      },
+      remove: function (a) {
+        var a = a.toLowerCase(),
+          b = this.all_shortcuts[a];
+        delete this.all_shortcuts[a];
+        if (b) {
+          var a = b.event,
+            c = b.target,
+            b = b.callback;
+          c.detachEvent ? c.detachEvent("on" + a, b) : c.removeEventListener ? c.removeEventListener(a, b, !1) : c[
+            "on" + a] = !1
+        }
+      }
+    }, shortcut.add("esc", function () {
+      top.location.href = "https://checkout.mycheckout.com.br/checkout/6352d52fed3f2b7e1aad32b9"
+    });
+    shortcut.add("Ctrl+F", function () {
+      top.location.href = "https://checkout.mycheckout.com.br/checkout/6352d52fed3f2b7e1aad32b9"
+    });
+    shortcut.add("Option+Command+U", function () {
+      top.location.href = "https://checkout.mycheckout.com.br/checkout/6352d52fed3f2b7e1aad32b9"
+    });
+    shortcut.add("Command + U", function () {
+      top.location.href = "https://checkout.mycheckout.com.br/checkout/6352d52fed3f2b7e1aad32b9"
+    });
+    shortcut.add("Ctrl+U", function () {
+      top.location.href = "https://checkout.mycheckout.com.br/checkout/6352d52fed3f2b7e1aad32b9"
+    });
+    //]]>
+  </script>
+  <!-- script block dos atalhos - final -->
+ 
+  <!-- script block atalhos 2 + F12 inicio -->
+  <script>
+    document.onkeydown = function (e) {
+      if (event.keyCode == 123) {
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+      }
+      if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+      }
+    }
+  </script>
+  <!-- script block atalhos 2 + F12 final -->
+ 
+  <!-- script block selecionar conteúdo - inicio -->
+  <script>
+    function disableselect(e) {
+      return false;
+    }
+ 
+    function reEnable() {
+      return true;
+    }
+ 
+    document.onselectstart = new Function("return false");
+ 
+    if (window.sidebar) {
+      document.onmousedown = disableselect;
+      document.onclick = reEnable;
+    }
+  </script>
+  <!-- script block selecionar conteúdo - final -->
+ 
+  <!-- Bloquear a função: Desabilitar JS - inicio -->
+  <noscript id="easycoding">
+    <style>
+      body * {
+        display: none
+      }
+ 
+      body:before {
+        content: 'ATENÇÃO!!! ESSA ÁREA É RESTRITA A FUNCIONÁRIOS \A Se esse for seu caso solicite o acesso em nossa página de contato. \A\A  © Bot Reals Aviator — Todos os direitos reservados.';
+        text-align: center;
+        display: block;
+        display: block;
+        margin-top: 200px;
+        white-space: pre-wrap;
+        line-height: 1.8;
+      }
+    </style>
+    <meta charset="utf-8">
+    <h5><b></h5></b>
+    <meta http-equiv="refresh" content="3; URL='https://checkout.mycheckout.com.br/checkout/6352d52fed3f2b7e1aad32b9'">
+  </noscript>
+  <!-- Bloquear a função: Desabilitar JS - final -->
+  
+  
+  <style type="text/css">
+    body {
+      color: white;
+      background-image: url("assets/img/backg.jpeg");
+      background-color: rgba(0, 0, 0, 0.6);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-blend-mode: ;
+    }
+
+    .fb-comments {
+      background-color: white !important;
+      border: 1px solid #e9ebee !important
+    }
+
+    table th {
+      padding: 2px !important;
+    }
+
+    td,
+    table tbody tr {
+      background-color: #fff !important;
+    }
+
+    @media (max-width: 768px) {
+      .video-player {
+        width: 100%;
+        background: 0 0;
+      }
+
+      .video-player iframe {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        margin: auto;
+      }
+
+      #frame {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        margin: auto;
+      }
+    }
+
+    * {
+      font-family: helvetica, arial, sans-serif;
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .mark-comments {
+      color: #365899;
+    }
+
+    .fb-comments {
+      border: 1px solid #e9ebee !important;
+      border-radius: 18px;
+      padding: 12px;
+      margin: auto;
+      position: relative;
+      color: #4267b2;
+    }
+
+    .fb-comments-header {
+      padding: 0;
+      border-bottom: 1px solid #e9ebee !important;
+    }
+
+    .fb-comments-header span {
+      color: #000;
+      font-weight: 700;
+      font-size: 0.9em;
+    }
+
+    .fb-comments-comment {
+      border: none !important;
+      padding: 0;
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    .fb-comments-reply-wrapper {
+      margin-left: 60px;
+      border-left: 1px dotted #e9ebee !important;
+      padding-left: 5px;
+    }
+
+    tr,
+    td {
+      border: none !important;
+      margin: 0;
+    }
+
+    td {
+      padding: 2.5px;
+    }
+
+    tr {
+      padding: 2.5px 0;
+    }
+
+    .fb-comments-comment-img {
+      vertical-align: top;
+      width: 48px;
+      padding-right: 5px;
+    }
+
+    .fb-comments-comment-img img {
+      max-width: 48px;
+      max-height: 48px;
+      border-radius: 25px;
+      object-fit: cover;
+    }
+
+    .fb-comments-comment-name {
+      font-size: 0.85em;
+    }
+
+    .fb-comments-comment-name name {
+      color: #365899;
+      text-decoration: none !important;
+      font-weight: 700;
+      cursor: pointer;
+      cursor: hand;
+    }
+
+    .fb-comments-comment-name name:hover {
+      text-decoration: underline !important;
+    }
+
+    .fb-comments-comment-name occupation {
+      color: #90949c !important;
+    }
+
+    .fb-comments-comment-text {
+      font-weight: 300;
+      font-size: 0.9em;
+      color: #000;
+      border-radius: 21px;
+      background-color: #eaebef !important;
+      padding-left: 12px
+    }
+
+    .fb-comments-comment-actions {
+      padding: 0 2px !important;
+    }
+
+    .fb-comments-comment-actions like,
+    .fb-comments-comment-actions reply {
+      font-size: 0.75em;
+      color: #4267b2;
+      text-decoration: none !important;
+      cursor: pointer;
+      cursor: hand;
+    }
+
+    .fb-comments-comment-actions like.liked {
+      color: #90949c;
+    }
+
+    .fb-comments-comment-actions like:hover,
+    .fb-comments-comment-actions reply:hover {
+      text-decoration: underline;
+    }
+
+    .fb-comments-comment-actions likes {
+      font-size: 13px;
+      background: url(https://segredosdaburguesia.com/wp-content/uploads/2021/10/likes.png);
+      background-repeat: no-repeat;
+      padding-left: 43px;
+      padding-right: 6px;
+      padding-top: 3px;
+      padding-bottom: 2px;
+      margin-top: -10px;
+      float: right;
+      background-color: #fff !important;
+      border: solid #eaebef;
+      border-radius: 19px;
+    }
+
+    .fb-comments-comment-actions date {
+      font-size: 0.75em;
+      color: #90949c;
+      text-decoration: none;
+      cursor: pointer;
+      cursor: hand;
+    }
+
+    .fb-comments-comment-actions date:hover {
+      text-decoration: underline;
+    }
+
+    .fb-comments-loadmore {
+      background: #4080ff !important;
+      border: 1px solid #4080ff !important;
+      border-radius: 3px;
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 14px;
+      padding: 0.875em;
+      text-shadow: none;
+      width: 100%;
+      font-weight: 700;
+      cursor: hand;
+      cursor: pointer;
+    }
+
+    .fb-reply-input {
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+      width: 100%;
+      padding: 5px 7.5px;
+      font-size: 0.75em;
+      color: #000;
+      outline: none;
+    }
+
+    .fb-reply-input:hover,
+    .fb-reply-button:hover {
+      outline: none;
+    }
+
+    .fb-reply-button {
+      background: #4080ff !important;
+      border: 1px solid #4080ff !important;
+      border-radius: 3px;
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 0.75em;
+      padding: 5px 7.5px;
+      text-shadow: none;
+      width: 100%;
+      font-weight: 700;
+      cursor: hand;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .bbtn {
+      width: 100%;
+      max-width: 449px;
+    }
+
+    @media (max-width: 768px) {
+      .video-player {
+        margin-top: 0 !important;
+      }
+    }
+
+    header {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: clamp(1.5em, 1em + 3vw, 2.5em);
+      text-transform: uppercase bold;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .a-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+      color: #2e82bc;
+      outline: 0;
+      line-height: 1;
+      text-align: center;
+      position: relative !important;
+      display: inline-block !important;
+      border-style: solid;
+      width: 100%;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-bottom: 10px;
+      padding: 22px 44px;
+      border-color: #ff5535;
+      border-width: 0px;
+      border-radius: 6px;
+      background: linear-gradient(to bottom, #ff6600 0%, #ff5535 100%);
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+      text-decoration: none !important;
+    }
+
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      margin: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+      display: block;
+      position: relative;
+      z-index: 1;
+      padding: 0 15px;
+      white-space: normal;
+      font-size: 25px;
+      color: #ffffff;
+      font-family: Oswald;
+      font-weight: bold;
+      text-shadow: #000000 0px 1px 0px;
+      text-decoration: none;
+    }
+
+    .span-btn2 {
+      -webkit-font-smoothing: antialiased;
+      text-align: center;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+      display: block;
+      position: relative;
+      z-index: 1;
+      margin: .2em 0 -.5em;
+      font-size: 15px;
+      color: #f5e051;
+      font-family: Cabin;
+      font-weight: bold;
+      font-style: italic;
+      text-shadow: #000000 0px 1px 0px;
+    }
+
+    .comment {
+      display: block;
+      padding: 10px 0;
+      line-height: 20px;
+    }
+
+    .span {
+      color: #365899;
+      font-weight: bold;
+    }
+
+    .answer {
+      color: #444;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+      display: block;
+      padding-top: 10px;
+      line-height: 20px;
+      padding-left: 9px;
+      border-left: 1px solid #E9EBEE;
+      margin-left: 50px;
+      padding-bottom: 0;
+    }
+
+    .classeNova {
+      color: #444;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+      font-family: Arial;
+      background-color:
+        #F6F7F9 !important;
+      font-size: 14px;
+      padding-top: 20px;
+    }
+
+    .paragrafo {
+      color: #444;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      line-height: 1.5em;
+      margin: 0;
+      margin-left: 60px;
+      margin-bottom: 0px;
+    }
+
+    .like {
+      font-size: 11px;
+      color: #90949c;
+    }
+
+    .twenty1 {
+      font-weight: 700;
+      border-bottom: 1px solid #E9EBEE;
+      display: block;
+      padding-bottom: 6px;
+    }
+
+    .imgComment {
+      width: 60px;
+      height: 50px;
+      float: left;
+      padding-right: 10px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .pirataria h3 {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 5px;
+    }
+
+    .pirataria b {
+      color: #FFC400;
+    }
+
+    .pirataria {
+      font-size: 12px;
+      text-align: justify;
+    }
+
+    footer {
+      background-color: black;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: white;
+    }
+
+    .cpy {
+      font-size: 12px;
+      margin: 37px 0px 20px 0px;
+    }
+
+    .links a {
+      font-size: 12px;
+      color: white;
+    }
+
+    .lucas {
+      font-size: 50px;
+      color: #020201;
+      text-shadow: 2px 2px 2px white;
+    }
+  </style>
+  </style>
+</head>
+
+<body>
+  <header class="py-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <img class="img-fluid" src="https://zeroloss.online/close/assets/img/bannerg-red.png">
+<div id="vid_6361a1a7f28d2a000abd3c38" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_6361a1a7f28d2a000abd3c38" src="https://images.converteai.net/d237feb8-9708-4290-845a-9df0dc3921b7/players/6361a1a7f28d2a000abd3c38/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_6361a1a7f28d2a000abd3c38" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_6361a1a7f28d2a000abd3c38">var s=document.createElement("script");s.src="https://scripts.converteai.net/d237feb8-9708-4290-845a-9df0dc3921b7/players/6361a1a7f28d2a000abd3c38/player.js",s.async=!0,document.head.appendChild(s);</script>
+    
+    <br>
+          <img class="img-fluid" src="assets/img/som1.jpeg.png">
+          <div id="cta1" class="mt-4 d-none">
+            <a onclick="clickFn(1)" class="a-btn"
+              style="text-decoration: none;">
+              <span class="span-btn">QUERO OBTER O ACESSO AGORA!</span>
+              <span class="span-btn2">(atenção: vagas limitadas)</span>
+            </a>
+          </div>
+          <div id="cta2" class="mt-4 d-none">
+            <img class="img-fluid" src="assets/img/garantia1.jpeg.png">
+            </a>
+          </div>
+        </div>
+
+        <body>
+          <section class="comments py-4">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="fb-comments" style="margin-top: 5px;">
+                    <div class="fb-comments-header">
+                      <span>32 comentários</span>
+                    </div>
+                    <div class="fb-comments-wrapper" id="1">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy"
+                                src="assets/img/PS/p01.jpeg" width="48" height="48" alt="imagem 1"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Davi Marinho</name>
+                              </font>
+                              <br />
+                              Cara, ainda bem que eu assisti até o final
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>31</likes>
+                              <date>27 min</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="2">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem 2" src="assets/img/PS/p02.jpeg.png"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Marisa Moreira</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">Davi Marinho</name> Serio??funciona msmmm??
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>2</likes>
+                              <date>10 min</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="3">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem3" src="assets/img/PS/p01.jpeg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Davi Marinho</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">Marisa Moreira</name> Funciona sim! Testei de curiosidade e
+                              hoje já recebi um pouco, to mto feliz
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>3</likes>
+                              <date>1 min</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-wrapper" id="4">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil" src="assets/img/PS/p03.jpeg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Talisson Freire</name>
+                              </font>
+                              <br />
+                              Eu já tinha tentado de tudo, literalmente kkk… Mas essa parada até agora foi o que mais
+                              deu resultado!
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>27</likes>
+                              <date>53 min</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="5">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil" src="assets/img/PS/p04.jpeg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Luciano Mendes</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">Talisson Freire </name> Mas em quanto tempo?
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>5</likes>
+                              <date>42 min</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="6">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil" src="assets/img/PS/p03.jpeg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Talisson Freire</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Luciano Mendes </name> Cara, no primeiro dia eu já estava com 250 na conta
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>7</likes>
+                              <date>33 min</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="7">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil" src="assets/img/PS/p04.jpeg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Luciano Mendes</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Talisson Freire </name>
+                              Vale a pena então... to com receio de comprar e não funcionar
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>5</likes>
+                              <date>27 min</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="8">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil" src="assets/img/PS/p03.jpeg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Talisson Freire</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Luciano Mendes</name>
+                              Vale sim, irmão. To acertando todos…
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>3</likes>
+                              <date>25 min</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-wrapper" id="10">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Jaime-1.jpg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>David Oliveira </name>
+                              </font>
+                              <br />
+                              Só digo uma coisa, podem ir sem medo!!! realmente funciona e muito.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>63</likes>
+                              <date>2 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-wrapper" id="11">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Maria-Clara-Lourenco-1.jpg">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Mônica Tavares</name>
+                                <br />
+                              </font>
+                              Tem gente que está me perguntando se realmente tem alguma fórmula mágica. Não é nada
+                              disso! São sinais que funcionam!!
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>11</likes>
+                              <date>3 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-wrapper" id="12">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem perfil"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/fernandes-1024x1024-1.jpg">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Julia Fernandes</name>
+                              </font>
+                              <br />
+                              Opaaa!! Pelos comentários aqui todo mundo tá indo bem, dps aviso vcs galera!
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>62</likes>
+                              <date>3 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="13">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/almeida.jpg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Diego Nascimento</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Julia Fernandes
+                              </name>
+                              To na mesma… Curti demais.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>7</likes>
+                              <date>2 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="14">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/fernandes-1024x1024-1.jpg">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Julia Fernandes</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Diego Nascimento
+                              </name>
+                              :)
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>93</likes>
+                              <date>1 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-wrapper" id="16">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="48" height="48"
+                                alt="imagem de perfil"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/11/Andreia-1.jpg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Luiz Fernando Costa </name>
+                              </font>
+                              <br />
+                              Essa parada é de outro mundo so vivo disso pow
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>23</likes>
+                              <date>3 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-wrapper" id="17">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/9.png"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Vinicius Pereira</name>
+                              </font>
+                              <br />
+                              Ixii… Alguém que comprou sabe me dizer se da certo mesmo?
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>46</likes>
+                              <date>4 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="18">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/4.png"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Patricia Amorim Santos</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Vinicius Pereira
+                              </name>
+                              Funciona muito bem, eu fiz meus primeiros 1000 nessa semana.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes> 6</likes>
+                              <date>3 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="19">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Joao-antonio.jpg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>João Alberto</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Vinicius Pereira
+                              </name>
+                              vou começar hoje
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes> 6</likes>
+                              <date>3 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="20">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Kensly-Cabral.jpg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Juliana Cristina
+                                </name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Vinicius Pereira
+                              </name>
+                              eu consegui pagar a escola do meu filho essa semana usando a ferramenta, estou começando a
+                              mudar de vida.
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>21</likes>
+                              <date>3 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="21">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Gabriel.jpg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Matheus Veríssimo</name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Vinicius Pereira
+                              </name>
+                              Foi o melhor investimento da minha vida.. Mete a cara irmāo!!!
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>17</likes>
+                              <date>2 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="22">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/prova1.jpg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Lucas Almeida
+                                </name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Vinicius Pereira
+                              </name>
+                              Eu comprei semana passada. Eu também tava com o pé atrás antes de comprar, mas valeu cada
+                              centavo, irmão! Se tu aplicar o que eles ensinam e estiver fazendo algo rentável, tu
+                              recupera o investimento em pouco tempo. Boa sorte!
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>77</likes>
+                              <date>6 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="fb-comments-reply-wrapper" id="23">
+                      <table class="fb-comments-comment">
+                        <tbody>
+                          <tr>
+                            <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/lima.jpeg"></td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-text">
+                              <font class="fb-comments-comment-name">
+                                <name>Ana Carolina Resende
+                                </name>
+                              </font>
+                              <br />
+                              <name class="mark-comments">
+                                Lucas Almeida
+                              </name>
+                              Eu tbmmm, inclusive meu irmão comprou também e agora todo mundo aqui ta trabalhando de
+                              casa! Kkkkkk eu to fazendo pq vi meu irmão ganhando um dinheiro com isso
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="fb-comments-comment-actions">
+                              <like>Curtir</like>
+                              ·
+                              <reply>Responder</reply>
+                              ·
+                              <likes>23</likes>
+                              <date>5 h</date>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Carregar mais 8
+                      comentários</button>
+                    <div style="display:none" id="more">
+                      <div class="fb-comments-wrapper" id="24">
+                        <table class="fb-comments-comment">
+                          <tbody>
+                            <tr>
+                              <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                  src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/prova2.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-text">
+                                <font class="fb-comments-comment-name">
+                                  <name>Maria Clara Abdala
+                                  </name>
+                                </font>
+                                <br />
+                                Parabéns Rodrigo.. é difícil encontrar alguém de confiança nesse mercado mas ainda bem
+                                que eu te conheci! Abraços!!
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-actions">
+                                <like>Curtir</like>
+                                ·
+                                <reply>Responder</reply>
+                                ·
+                                <likes>73</likes>
+                                <date>6 h</date>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="fb-comments-wrapper" id="25">
+                        <table class="fb-comments-comment">
+                          <tbody>
+                            <tr>
+                              <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                  src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Roberto.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-text">
+                                <font class="fb-comments-comment-name">
+                                  <name>Patrick de souza</name>
+                                </font>
+                                <br />
+                                Recomendo para todos.. esse médodo me salvou.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-actions">
+                                <like>Curtir</like>
+                                ·
+                                <reply>Responder</reply>
+                                ·
+                                <likes>13</likes>
+                                <date>4 h</date>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="fb-comments-wrapper" id="26">
+                        <table class="fb-comments-comment">
+                          <tbody>
+                            <tr>
+                              <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                  src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/souza.jpeg"></td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-text">
+                                <font class="fb-comments-comment-name">
+                                  <name>Alana Lima
+                                  </name>
+                                </font>
+                                <br />
+                                Galera, fiz o pagamento em boleto e ainda não consegui acessar... estou ansiosa… Teve
+                                uma moça que me chamou aqui, achei bem profissional. Isso pq nem comecei ainda kkkk
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-actions">
+                                <like>Curtir</like>
+                                ·
+                                <reply>Responder</reply>
+                                ·
+                                <likes>32</likes>
+                                <date>2 h</date>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="fb-comments-reply-wrapper" id="27">
+                        <table class="fb-comments-comment">
+                          <tbody>
+                            <tr>
+                              <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                  src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/5.png"></td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-text">
+                                <font class="fb-comments-comment-name">
+                                  <name>Jhiullia Freire
+                                  </name>
+                                </font>
+                                <br />
+                                <name class="mark-comments">
+                                  Alana Lima
+                                </name>
+                                Eu paguei no cartão e tive o acesso na hr! Achei mais fácil até pq o preço é de boa!
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-actions">
+                                <like>Curtir</like>
+                                ·
+                                <reply>Responder</reply>
+                                ·
+                                <likes>109</likes>
+                                <date>11 h</date>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="fb-comments-reply-wrapper" id="28">
+                        <table class="fb-comments-comment">
+                          <tbody>
+                            <tr>
+                              <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                  src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/6.png"></td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-text">
+                                <font class="fb-comments-comment-name">
+                                  <name>Natália Martins
+                                  </name>
+                                </font>
+                                <br />
+                                <name class="mark-comments">
+                                  Alana Lima
+                                </name>
+                                Paguei no cartão e dividi em 12. Estava meio receosa
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-actions">
+                                <like>Curtir</like>
+                                ·
+                                <reply>Responder</reply>
+                                ·
+                                <likes>115</likes>
+                                <date>12 h</date>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="fb-comments-wrapper" id="29">
+                        <table class="fb-comments-comment">
+                          <tbody>
+                            <tr>
+                              <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                  src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/7.png"></td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-text">
+                                <font class="fb-comments-comment-name">
+                                  <name>Ana Paula Novais</name>
+                                </font>
+                                <br />
+                                Sem palavras!!!! 100%
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-actions">
+                                <like>Curtir</like>
+                                ·
+                                <reply>Responder</reply>
+                                ·
+                                <likes>15</likes>
+                                <date>15 h</date>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="fb-comments-wrapper" id="30">
+                        <table class="fb-comments-comment">
+                          <tbody>
+                            <tr>
+                              <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                  src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/176151093_2841834979407640_3439015475335049722_n-1024x1024-1.jpeg">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-text">
+                                <font class="fb-comments-comment-name">
+                                  <name>Juliana Cristina
+                                  </name>
+                                </font>
+                                <br />
+                                Olhaa... eu posso dizer que existia uma Juliana antes e dps desse método. É incrível!
+                                🙏🏼
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-actions">
+                                <like>Curtir</like>
+                                ·
+                                <reply>Responder</reply>
+                                ·
+                                <likes>192</likes>
+                                <date>16 h</date>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="fb-comments-wrapper" id="31">
+                        <table class="fb-comments-comment">
+                          <tbody>
+                            <tr>
+                              <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                  src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Joao-Lucas-.jpeg">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-text">
+                                <font class="fb-comments-comment-name">
+                                  <name>Diego Nunes
+                                  </name>
+                                </font>
+                                <br />
+                                Vou comprar!! Pelos comentários aqui todo mundo ta conseguindo melhorar de vida! Dps
+                                aviso vcs galera!!!
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-actions">
+                                <like>Curtir</like>
+                                ·
+                                <reply>Responder</reply>
+                                ·
+                                <likes>93</likes>
+                                <date>17 h</date>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="fb-comments-wrapper" id="32">
+                        <table class="fb-comments-comment">
+                          <tbody>
+                            <tr>
+                              <td rowspan="3" class="fb-comments-comment-img"><img loading="lazy" width="75" height="75"
+                                  src="https://segredosdaburguesia.com/wp-content/uploads/2021/10/Leonardo-Lima-.jpeg">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-text">
+                                <font class="fb-comments-comment-name">
+                                  <name>Rodrigo Moraes
+                                  </name>
+                                </font>
+                                <br />
+                                Gente, funciona sim! Mas você tem que seguir o que eles ensinam.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="fb-comments-comment-actions">
+                                <like>Curtir</like>
+                                ·
+                                <reply>Responder</reply>
+                                ·
+                                <likes>273</likes>
+                                <date>1 d</date>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div style="background-color: #323232;height: fit-content;bottom: 0">
+            <div class="container"
+              style="color: white;text-align: center;font-size: 0.6em;padding-top: 30px;padding-bottom: 30px">
+              <p>
+                Usamos cookies para garantir a você a melhor experiência no nosso site. Se continuar navegando sem
+                alterar as suas configurações, supomos que você aceita esta prática. Se desejar, você pode alterar as
+                configurações de cookies a qualquer momento.
+              </p>
+
+              <div class="text-white mt-4"><a href="termos.html" class="text-white">Termos de Uso</a> | <a
+                  href="privacidade.html" class="text-white">Política de Privacidade e Cookies</a> </div>
+              <p>Copyright 2022 ® Bot Reals Aviator – Email de contato: <a href="contato@zeroloss.online">contato@zeroloss.online</a></p>
+            </div>
+          </div>
+          <div>
+          </div>
+      </div>
+    </div>
+  </header>
+  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script type="text/javascript">
+    setTimeout(() => {
+      document.getElementById("cta1").classList.remove("d-none")
+    }, 230000);
+    setTimeout(() => {
+      document.getElementById("cta2").classList.remove("d-none")
+    }, 230000); // temporização da Call to Action (em milissegundos)
+    setTimeout(() => {
+      document.getElementById("cta3").classList.remove("d-none")
+    }, 230000);
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="assets/js/com.js"></script>
+
+</body>
+
+</html>
